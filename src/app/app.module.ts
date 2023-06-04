@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SampleTafqeetDemoComponent } from './sample-tafqeet-demo/sample-tafqeet-demo.component';
+import{TafqeetLibModule} from 'tafqeet-lib';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SampleTafqeetDemoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TafqeetLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
